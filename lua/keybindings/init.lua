@@ -16,3 +16,7 @@ map('v', '>', '>gv', {noremap = true, silent = false})
 
 map('v', 'kj', '<ESC>', {noremap = true, silent = false})
 map('v', 'jk', '<ESC>', {noremap = true, silent = false})
+
+map('n', '<C-a>', 'ggVG', {noremap = true, silent = false})
+
+map('n', '<S-TAB>', ':BufferLineCyclePrev<CR>', {noremap = true, silent = true})

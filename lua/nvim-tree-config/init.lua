@@ -10,4 +10,5 @@ require'nvim-tree'.setup {
     enable = true,
     update_cwd = true,
   },
+  gitignore = 1,
 }

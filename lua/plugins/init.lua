@@ -22,6 +22,32 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   } 
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'onsails/lspkind-nvim'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/vim-vsnip-integ'
+  use 'norcalli/nvim-colorizer.lua'
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    config = function()
+      require('gitsigns').setup{
+        current_line_blame = true,
+      }
+    end
+  }
+  use 'glepnir/dashboard-nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'lukas-reineke/format.nvim' 
+  use {"akinsho/toggleterm.nvim"}
+  use 'terrortylor/nvim-comment'
 end)
 
 

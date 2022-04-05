@@ -28,4 +28,5 @@ vim.o.expandtab = true
 vim.bo.expandtab = true
 vim.o.shiftwidth = 2
 vim.bo.shiftwidth = 2
-
+vim.opt.list = true
+vim.opt.listchars:append("space:⋅")
